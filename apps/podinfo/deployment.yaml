@@ -5,6 +5,8 @@ metadata:
     app: podinfo
   name: podinfo
   namespace: podinfo
+  annotations:
+    deployment.kubernetes.io/change-cause: "podinfo 6.7.0"
 spec:
   replicas: 3
   selector:
