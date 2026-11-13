@@ -6,7 +6,7 @@ metadata:
   name: podinfo
   namespace: podinfo
   annotations:
-    deployment.kubernetes.io/change-cause: "podinfo 6.7.0"
+    deployment.kubernetes.io/change-cause: "podinfo 6.7.1"
 spec:
   replicas: 3
   selector:
@@ -18,7 +18,7 @@ spec:
         app: podinfo
     spec:
       containers:
-      - image: ghcr.io/stefanprodan/podinfo:6.7.0
+      - image: ghcr.io/stefanprodan/podinfo:6.7.1
         name: podinfo
         ports:
         - containerPort: 9898
